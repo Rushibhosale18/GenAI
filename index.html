@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GenAI App</title>
+  <style>
+    body {
+      font-family: Arial;
+      text-align: center;
+      margin-top: 50px;
+    }
+    input {
+      padding: 10px;
+      width: 250px;
+    }
+    button {
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>GenAI App 🚀</h1>
+
+  <input type="text" id="input" placeholder="Type something..." />
+  <button onclick="callAPI()">Send</button>
+
+  <h3 id="output"></h3>
+
+  <script>
+    async function callAPI() {
+      const input = document.getElementById("input").value;
+
+      const res = await fetch("/api");
+      const data = await res.json();
+
+      document.getElementById("output").innerText = data.message;
+    }
+  </script>
+
+</body>
+</html>
