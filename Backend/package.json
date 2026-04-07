@@ -26,3 +26,6 @@
     "zod-to-json-schema": "^3.25.1"
   }
 }
+"scripts": {
+  "build": "echo done"
+}
