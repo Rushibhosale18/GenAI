@@ -2,9 +2,11 @@
   "name": "interview-ai-yt",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "npx nodemon server.js",
+    "start": "node server.js",
+    "build": "echo done"
   },
   "repository": {
     "type": "git",
@@ -13,8 +15,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Rushibhosale18/GenAI/issues"
-  },
-  "homepage": "https://github.com/Rushibhosale18/GenAI#readme"
+  "dependencies": {
+    "express": "^5.2.1"
+  }
 }

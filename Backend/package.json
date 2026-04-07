@@ -4,10 +4,10 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "dev": "npx nodemon server.js",
-    "build": "echo done",
-    "start": "node server.js"
-  },
+  "dev": "npx nodemon server.js",
+  "start": "node server.js",
+  "build": "echo done"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
